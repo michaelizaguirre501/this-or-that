@@ -5,6 +5,7 @@ const MongoClient = require('mongodb').MongoClient
 const PORT = 8000
 require('dotenv').config()
 
+
 //Connect to Mongo
 let db,
     dbConnectionStr = process.env.MONGO_DB,

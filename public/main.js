@@ -1,6 +1,15 @@
-document.querySelector('span').addEventListener('click', nextQuestion)
+const choose = document.querySelectorAll('.answer')
+const selections = [];
+let counter = 0
+
+Array.from(choose).forEach((element) => {
+    element.addEventListener('click', nextQuestion)
+})
 
 function nextQuestion() {
+    selections.push(this.innerText)
+    console.log(selections)
+    counter++
 
 }
 
