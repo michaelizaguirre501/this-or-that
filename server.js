@@ -17,6 +17,7 @@ MongoClient.connect(dbConnectionStr, {
     .then(client => {
         console.log(`Connected to ${dbName} Database`)
         db = client.db(dbName)
+
     })
 //Middleware
 app.set('view engine', 'ejs')
@@ -27,7 +28,10 @@ app.use(express.urlencoded({
 app.use(express.json())
 
 //API
+
 app.locals.counter = 0
+
+
 app.get('/', (request, response) => {
     db.collection('questions').find().toArray()
         .then(data => {
@@ -36,6 +40,7 @@ app.get('/', (request, response) => {
             })
         })
         .catch(error => console.error(error))
+
 })
 
 

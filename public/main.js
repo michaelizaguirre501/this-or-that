@@ -2,6 +2,11 @@ const choose = document.querySelectorAll('.answer')
 const selections = [];
 let counter = 0
 
+if (!localStorage.counter) {
+    localStorage.setItem('counter', 0)
+}
+
+
 Array.from(choose).forEach((element) => {
     element.addEventListener('click', nextQuestion)
 })
