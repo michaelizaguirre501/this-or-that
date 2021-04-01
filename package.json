@@ -4,5 +4,26 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "mongodb": "^3.6.5"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "name": "this-or-that",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelizaguirre501/this-or-that.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelizaguirre501/this-or-that/issues"
+  },
+  "homepage": "https://github.com/michaelizaguirre501/this-or-that#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

@@ -26,6 +26,7 @@ app.use(express.urlencoded({
 app.use(express.json())
 
 //API
+app.locals.counter = 0
 app.get('/', (request, response) => {
     db.collection('questions').find().toArray()
         .then(data => {
@@ -45,7 +46,7 @@ app.listen(process.env.PORT || PORT, () => {
 })
 
 
-// Set up alert/ modal to have user enter name, post that data as a new player object in the players collection 
+// Set up alert / modal to have user enter name, post that data as a new player object in the players collection 
 // have the questions show up one at a time, on click show the next question and update the player in the player collection with that choice 
 // add admin page with form for me to add new question objects
 // whole lotta css 

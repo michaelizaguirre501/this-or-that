@@ -13,14 +13,14 @@
 
     <h1>This or That</h1>
     <ul class="questions">
-        <% for(let i=0; i < info.length; i++) {%>
-        <li class="task">
-            <span><%= info[i].this %></span>
-            <span>OR</span>
-            <span><%= info[i].that %></span>
+
+        <li class="question">
+            <span class='this'><%= info[counter].this %></span>
+            <p>OR</p>
+            <span class='that'><%= info[counter].that %></span>
 
         </li>
-        <% } %>
+
     </ul>
 
 
