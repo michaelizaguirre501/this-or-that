@@ -29,7 +29,7 @@ app.use(express.json())
 
 //API
 
-app.locals.counter = 0
+
 
 
 app.get('/', (request, response) => {
@@ -40,8 +40,11 @@ app.get('/', (request, response) => {
             })
         })
         .catch(error => console.error(error))
-
 })
+
+
+
+
 
 
 
